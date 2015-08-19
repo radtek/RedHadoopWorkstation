@@ -1,0 +1,762 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\CmdGUI.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "res\\icon1.ico"
+IDI_ICON4               ICON                    "res\\d.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 221, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 RedHadoop Studio 0.2"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDI_ICON,IDC_STATIC,10,23,20,20,0,WS_EX_TRANSPARENT
+    LTEXT           "RedHadoop Studio 0.2 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,40,40,119,8
+    DEFPUSHBUTTON   "确定",IDOK,153,59,50,16,WS_GROUP
+    LTEXT           "红象云腾公司  版权所有",IDC_STATIC,40,25,110,8
+    CONTROL         "http://www.redhadoop.com",IDC_MFCLINK1,"MfcLink",WS_TABSTOP,39,51,111,14
+END
+
+IDD_CMDGUI_DIALOG DIALOGEX 0, 0, 509, 239
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "RedHadoop Studio 0.3"
+MENU IDR_TOOLMENU
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "命令行",IDC_BCmd,295,76,63,22
+    GROUPBOX        "查看工具箱：",IDC_STATIC,377,21,123,199
+    PUSHBUTTON      "查看HDFS",IDC_BBrowseHDFS,407,143,64,16
+    PUSHBUTTON      "查看Yarn",IDC_BBrowseYarn,407,163,63,16
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,23,30,252,184
+    EDITTEXT        IDC_EDITPATH,384,40,110,60,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "清空",IDC_BClear,421,112,35,20
+    GROUPBOX        "开发工具箱：",IDC_STATIC,287,21,83,200
+    PUSHBUTTON      "Eclipse",IDC_BEclipse,296,47,63,23
+    GROUPBOX        "服务工具箱：",IDC_STATIC,14,21,268,200
+    PUSHBUTTON      "查看Spark",IDC_BBrowseSpark,408,183,63,16
+    PUSHBUTTON      "颜色检测",ID_SEASBASE_INQUIRE,295,110,63,22
+    PUSHBUTTON      "车辆检索",ID_VEHICLE,295,139,63,22
+END
+
+IDD_DIALOGHADOOP DIALOGEX 0, 0, 263, 141
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "HDFS进程：",IDC_STATIC,13,12,226,53
+    GROUPBOX        "Yarn进程：",IDC_STATIC,14,75,225,49
+    PUSHBUTTON      "启动",IDC_BStartH,118,27,41,30
+    PUSHBUTTON      "停止",IDC_BStopH,168,27,40,30
+    PUSHBUTTON      "停止",IDC_BStopY,168,89,40,27
+    PUSHBUTTON      "启动",IDC_BStartY,118,88,40,29
+    LTEXT           "NameNode",IDC_NameNode,22,29,39,11
+    LTEXT           "DataNode",IDC_DataNode,22,43,39,11
+    LTEXT           "ResourceManager",IDC_ResourceManager,20,88,72,11
+    LTEXT           "NodeManager",IDC_NodeManager,20,102,59,11
+END
+
+IDD_DIALOGHIVE DIALOGEX 0, 0, 199, 121
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "HIVE进程：",IDC_STATIC,12,11,172,45
+    PUSHBUTTON      "启动",IDC_BStartHive,101,20,36,30
+    LTEXT           "HiveServer",IDC_HiveServer,19,80,39,11
+    LTEXT           "HIVECLI",IDC_HiveClt,25,32,39,11
+    GROUPBOX        "HiveServer进程：",IDC_STATIC,12,63,172,45
+    PUSHBUTTON      "启动",IDC_BStartHiveServer,101,72,36,30
+END
+
+IDD_DLGTREENODE DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,70,130,50,14
+    PUSHBUTTON      "取消",IDCANCEL,155,129,50,14
+    LTEXT           "Name:",IDC_STATIC,58,40,22,8
+    LTEXT           "IP:",IDC_STATIC,60,65,10,8
+    EDITTEXT        IDC_NODENAME,91,38,111,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,91,63,110,15
+END
+
+IDD_DIGUPDATE DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动更新"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "立即更新",IDC_BTN_NOWUPDATE,205,162,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,162,50,14
+    LISTBOX         IDC_LST_LOG,16,28,277,90,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "更新总进度：",IDC_STATIC,21,128,49,8
+    LTEXT           "当 前 进 度：",IDC_STATIC,22,147,59,8
+    CONTROL         "",IDC_PRS_TOTAL,"msctls_progress32",PBS_SMOOTH | WS_BORDER,74,125,214,14
+    CONTROL         "",IDC_PRS_CUR,"msctls_progress32",WS_BORDER,73,145,214,14
+    LTEXT           "服务器：",IDC_STATIC,22,16,33,8
+    COMBOBOX        IDC_CMB_SELSERVER,62,13,137,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MSG DIALOGEX 0, 0, 195, 120
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "立即升级",ID_Update,27,68,50,14
+    PUSHBUTTON      "暂不升级",IDCANCEL,103,69,50,14
+    LTEXT           "检测到有新版本，是否现在升级?",IDC_STATIC,31,35,124,20
+END
+
+IDD_REMINDER DIALOGEX 0, 0, 222, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "升级确认"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "是",ID_OK,33,63,50,14
+    PUSHBUTTON      "否",IDCANCEL,120,63,50,14
+    LTEXT           "即将进入升级程序，主程序将退出，是否继续？",IDC_STATIC,24,33,176,21
+END
+
+IDD_SEASBASE DIALOGEX 0, 0, 1059, 506
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " Redhadoop Seasbase V0.1 "
+MENU IDR_SEASBASEMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Excute",IDC_BINQUIRE,909,59,50,18
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,136,177,916,322
+    CONTROL         "",IDC_TREEVIEW,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_NOTOOLTIPS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,11,23,107,378
+    PUSHBUTTON      "Load Tables",IDC_BLOAD,40,459,50,17
+    PUSHBUTTON      "Load Videos",IDC_BLOADVIDEO,40,429,50,18
+    GROUPBOX        "TableList：",IDC_STATIC,6,9,119,400
+    GROUPBOX        "Load Data:",IDC_STATIC,5,415,119,75
+    DEFPUSHBUTTON   "LoadImage",IDC_LoadImage,142,151,43,14
+    CONTROL         "",IDC_IMAGE,"Static",SS_BLACKFRAME | SS_NOTIFY,144,20,196,127
+    EDITTEXT        IDC_ImagePath,187,151,150,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT2,379,31,121,128,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_ETEXT,540,27,311,126,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    GROUPBOX        "Inquire:",IDC_STATIC,530,9,330,159
+    GROUPBOX        "Color Message:",IDC_STATIC,369,9,140,160
+    GROUPBOX        "Detection:",IDC_STATIC,135,9,213,161
+    GROUPBOX        "Operate:",IDC_STATIC,879,9,122,158
+    PUSHBUTTON      "View Data",IDC_BROWERDATA,910,90,50,18
+END
+
+IDD_LISTVIEW DIALOGEX 0, 0, 916, 319
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LISTINFOS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,902,301
+END
+
+IDD_DESCINFO DIALOGEX 0, 0, 916, 314
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LISTMESSAGE,7,7,902,300,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLGVIDEOLOAD DIALOGEX 0, 0, 316, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load Video To Table"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "textfile",IDC_RADIOPARQUET,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,92,96,39,10
+    DEFPUSHBUTTON   "Load",IDOK,86,147,50,14
+    PUSHBUTTON      "Canel",IDCANCEL,171,146,50,14
+    LTEXT           "Destination Table",IDC_STATIC,21,19,66,8
+    LTEXT           "File Location",IDC_STATIC,23,46,78,8
+    EDITTEXT        IDC_VIDEOTABLE,91,17,204,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIDEOFILEPATH,91,44,191,14,ES_AUTOHSCROLL
+    LTEXT           "Progress",IDC_STATIC,23,121,56,8
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,91,119,206,14
+    PUSHBUTTON      "...",IDC_BTNVIDEOBROWSER,272,43,25,14
+    LTEXT           "Index Store",IDC_STATIC,23,96,39,8
+    LTEXT           "Split Size",IDC_STATIC,25,73,29,8
+    EDITTEXT        IDC_SPLITSIZE,91,71,128,14,ES_AUTOHSCROLL
+    LTEXT           "M",IDC_STATIC,225,74,8,8
+END
+
+IDD_IMAGELIST DIALOGEX 0, 0, 917, 315
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIMAGES,"SysListView32",WS_BORDER | WS_TABSTOP,7,7,902,301
+END
+
+IDD_DIALOGSPARK DIALOGEX 0, 0, 250, 121
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Spark 服务进程：",IDC_STATIC,12,11,228,45
+    PUSHBUTTON      "启动",IDC_BSTARTMASTER,89,20,36,30
+    LTEXT           "Spark Worker",IDC_HiveServer,141,32,51,11
+    LTEXT           "Spark Master",IDC_HiveClt,28,32,52,11
+    GROUPBOX        "Spark Shell：",IDC_STATIC,12,63,172,45
+    PUSHBUTTON      "启动",IDC_BStartHiveServer,191,20,36,30
+    LTEXT           "Spark Shell",IDC_HiveServer2,28,83,51,11
+    PUSHBUTTON      "启动",IDC_BStTARTSHELL,90,71,36,30
+END
+
+IDD_INQUIREUI DIALOGEX 0, 0, 723, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "LoadImage",IDC_LoadImage,18,125,43,14
+    CONTROL         "",IDC_IMAGE,"Static",SS_BLACKFRAME | SS_NOTIFY,17,9,196,115
+    EDITTEXT        IDC_ImagePath,63,126,150,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT2,239,18,121,117,ES_MULTILINE | ES_AUTOVSCROLL
+    EDITTEXT        IDC_ETEXT,389,18,311,118,ES_MULTILINE | WS_VSCROLL
+    GROUPBOX        "Inquire:",IDC_STATIC,379,0,330,146
+    GROUPBOX        "Color Message:",IDC_STATIC,230,0,140,146
+    GROUPBOX        "Detection:",IDC_STATIC,7,0,213,146
+END
+
+IDD_INQUIRETEXT DIALOGEX 0, 0, 695, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EINQUIRETEXT,16,18,672,109,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+END
+
+IDD_VEHICLE DIALOGEX 0, 0, 1059, 497
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RedHadoop Seasbase  V0.1"
+MENU IDR_SEASBASEMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREEVIEW,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_NOTOOLTIPS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,11,23,107,378
+    PUSHBUTTON      "Excute",IDC_BINQUIRE,935,70,50,18
+    PUSHBUTTON      "Load Tables",IDC_BLOAD,40,459,50,17
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,136,166,916,324
+    PUSHBUTTON      "Load Videos",IDC_BLOADVIDEO,40,429,50,18
+    GROUPBOX        "TableList：",IDC_STATIC,6,9,119,400
+    GROUPBOX        "Load Data:",IDC_STATIC,5,415,119,75
+    DEFPUSHBUTTON   "Load Image",IDC_LoadImage,352,53,43,14
+    CONTROL         "",IDC_IMAGE,"Static",SS_BLACKFRAME | SS_NOTIFY,145,23,196,115
+    EDITTEXT        IDC_ImagePath,147,143,194,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT2,434,28,121,120,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_ETEXT,595,27,277,121,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "Identify",IDC_BVehicle,350,86,45,14
+    GROUPBOX        "Vehicle Identification:",IDC_STATIC,135,10,271,154
+    GROUPBOX        "Vehicle Message:",IDC_STATIC,423,10,143,153
+    GROUPBOX        "Inquire:",IDC_STATIC,584,10,300,153
+    GROUPBOX        "Operate:",IDC_STATIC,901,10,122,154
+    PUSHBUTTON      "View Data",IDC_BVIEWDATA,935,102,50,18
+END
+
+IDD_DLGVEHVIDEOLOAD DIALOGEX 0, 0, 316, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load Video To Table"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "textfile",IDC_RADIOPARQUET,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,92,96,39,10
+    DEFPUSHBUTTON   "Load",IDOK,86,147,50,14
+    PUSHBUTTON      "Canel",IDCANCEL,171,146,50,14
+    LTEXT           "Destination Table",IDC_STATIC,21,19,66,8
+    LTEXT           "File Location",IDC_STATIC,23,46,78,8
+    EDITTEXT        IDC_VIDEOTABLE,91,17,204,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIDEOFILEPATH,91,44,191,14,ES_AUTOHSCROLL
+    LTEXT           "Progress",IDC_STATIC,23,121,56,8
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,91,119,206,14
+    PUSHBUTTON      "...",IDC_BTNVIDEOBROWSER,272,43,25,14
+    LTEXT           "Index Store",IDC_STATIC,23,96,39,8
+    LTEXT           "Split Size",IDC_STATIC,25,73,29,8
+    EDITTEXT        IDC_SPLITSIZE,91,71,128,14,ES_AUTOHSCROLL
+    LTEXT           "M",IDC_STATIC,225,74,8,8
+END
+
+IDD_VEHINQUIREUI DIALOGEX 0, 0, 723, 155
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Load Image",IDC_LoadImage,224,38,43,14
+    CONTROL         "",IDC_IMAGE,"Static",SS_BLACKFRAME | SS_NOTIFY,17,8,196,115
+    EDITTEXT        IDC_ImagePath,19,125,194,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT2,293,18,121,105,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_ETEXT,433,17,273,110,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "Inquire",IDC_BVehicle,222,71,45,14
+    GROUPBOX        "Static",IDC_STATIC,7,1,271,141
+    GROUPBOX        "Vehicle Message:",IDC_STATIC,287,7,133,131
+    GROUPBOX        "Inquire:",IDC_STATIC,428,7,283,129
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,2,0
+ PRODUCTVERSION 0,0,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "北京红象云腾系统技术有限公司"
+            VALUE "FileDescription", "RedHadoopStudio0.2"
+            VALUE "FileVersion", "0.0.2.0"
+            VALUE "InternalName", "CmdGUI.exe"
+            VALUE "LegalCopyright", " <北京红象云腾系统技术有限公司>。保留所有权利。"
+            VALUE "OriginalFilename", "CmdGUI.exe"
+            VALUE "ProductName", "RedHadoopStudio0.2"
+            VALUE "ProductVersion", "0.0.2.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_CMDGUI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 502
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_DIALOGHADOOP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_DIALOGHIVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_DLGTREENODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIGUPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_REMINDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_SEASBASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1052
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 499
+    END
+
+    IDD_LISTVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 909
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+    END
+
+    IDD_DESCINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 909
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 307
+    END
+
+    IDD_DLGVIDEOLOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_IMAGELIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 909
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+        HORZGUIDE, 157
+    END
+
+    IDD_DIALOGSPARK, DIALOG
+    BEGIN
+        MOCKUP, 0, 50, 0, 0, ".\start.bmp"
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_INQUIREUI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 716
+        VERTGUIDE, 86
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_INQUIRETEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 688
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_VEHICLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1052
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 490
+    END
+
+    IDD_DLGVEHVIDEOLOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_VEHINQUIREUI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 716
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPMENU MENU
+BEGIN
+    POPUP "系统配置"
+    BEGIN
+        MENUITEM "JAVA_HOME",                   ID_Java_Home
+        MENUITEM "HADOOP_HOME",                 ID_Hadoop_Home
+        MENUITEM "HIVE_HOME",                   ID_Hive_Home
+        MENUITEM "PATH",                        ID_Path
+        MENUITEM SEPARATOR
+        MENUITEM "HOSTS",                       ID_Hosts
+    END
+    POPUP "Hadoop配置"
+    BEGIN
+        MENUITEM "hadoop-env.cmd",              ID_HadoopEnvCmd
+        MENUITEM SEPARATOR
+        MENUITEM "core-site.xml",               ID_CoreSite
+        MENUITEM "hdfs-site.xml",               ID_HdfsSite
+        MENUITEM SEPARATOR
+        MENUITEM "yarn-site.xml",               ID_YarnSite
+        MENUITEM "mapred-site.xml",             ID_MapredSite
+        MENUITEM SEPARATOR
+        MENUITEM "hdfs namenode -format",       ID_HdfsNameNodeFormat
+    END
+    POPUP "Hive配置"
+    BEGIN
+        MENUITEM "hive-site.xml",               ID_HiveSite
+    END
+END
+
+IDR_POPUP_MENU MENU
+BEGIN
+    POPUP "操作"
+    BEGIN
+        MENUITEM "添加",                          ID_ADD
+        MENUITEM "修改",                          ID_Modify
+        MENUITEM "删除",                          ID_Delete
+    END
+END
+
+IDR_TOOLMENU MENU
+BEGIN
+    POPUP "配置(C)"
+    BEGIN
+        MENUITEM "HDFS格式化",                     ID_HdfsNameNodeFormat
+        MENUITEM "HDFS退出安全模式",                  ID_HDFSEXITSAFEMODE
+        POPUP "系统配置"
+        BEGIN
+            MENUITEM "JAVA_HOME",                   ID_Java_Home
+            MENUITEM "HADOOP_HOME",                 ID_Hadoop_Home
+            MENUITEM "HIVE_HOME",                   ID_Hive_Home
+            MENUITEM "PATH",                        ID_Path
+            MENUITEM SEPARATOR
+            MENUITEM "HOSTS",                       ID_Hosts
+        END
+        POPUP "Hadoop配置"
+        BEGIN
+            MENUITEM "hadoop-env.cmd",              ID_HadoopEnvCmd
+            MENUITEM SEPARATOR
+            MENUITEM "core-site.xml",               ID_CoreSite
+            MENUITEM "hdfs-site.xml",               ID_HdfsSite
+            MENUITEM SEPARATOR
+            MENUITEM "yarn-site.xml",               ID_YarnSite
+            MENUITEM "mapred-site.xml",             ID_MapredSite
+        END
+        POPUP "Spark配置"
+        BEGIN
+            MENUITEM "master",                      ID_SPARKMASTER
+            MENUITEM "slaves",                      ID_SPARKSLAVES
+        END
+    END
+    POPUP "入口(S)"
+    BEGIN
+        MENUITEM "查看HDFS",                      ID_BrowseHDFS
+        MENUITEM "HDFS Explorer",               ID_SEASBASE_HDFSEXPLORER
+        MENUITEM "查看YARN",                      ID_BrowseYarn
+        MENUITEM "查看SPARK",                     IDC_BBrowseSpark
+    END
+    POPUP "示例(D)"
+    BEGIN
+        MENUITEM "PI",                          ID_EXP_PI
+        MENUITEM "WordCount",                   ID_EXP_WC
+        MENUITEM "SparkPI",                     ID_EXP_SPI
+    END
+    POPUP "开发(D)"
+    BEGIN
+        MENUITEM "Eclipse 开发",                  IDC_BEclipse
+        MENUITEM "命令行",                         ID_Cmd
+    END
+    POPUP "Seasbase(S)"
+    BEGIN
+        MENUITEM "视频检索",                        ID_SEASBASE_INQUIRE
+    END
+    POPUP "帮助(H)"
+    BEGIN
+        MENUITEM "帮助",                          ID_HELP
+        MENUITEM "升级",                          ID_Update
+        MENUITEM "关于",                          ID_About
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "托盘菜单"
+    BEGIN
+        MENUITEM "显示主窗口",                       ID_SHOW
+        MENUITEM "隐藏主窗口",                       ID_HIDE
+        MENUITEM "退出",                          ID_Exit
+    END
+END
+
+IDR_SEASBASEMENU MENU
+BEGIN
+    POPUP "Load(L)"
+    BEGIN
+        MENUITEM "Load Videos",                 ID_LOAD_LOADVIDEO
+        MENUITEM "Load Tables",                 ID_LOAD_LOADTABLES
+        MENUITEM "Load Image",                  ID_LOAD_LOADIMAGE
+        MENUITEM "Execute",                     ID_LOAD_EXECUTE
+    END
+    POPUP "Hive(H)"
+    BEGIN
+        MENUITEM "cmd",                         ID_HIVE_CMD
+    END
+    POPUP "Help(H)"
+    BEGIN
+        MENUITEM "Help",                        ID_HELP_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASHWINDOW        BITMAP                  "res\\studio0.3.bmp"
+IDB_BITMAP2             BITMAP                  "res\\a.ico"
+IDB_BITMAP3             BITMAP                  "res\\c.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIGUPDATE DLGINIT
+BEGIN
+    IDC_CMB_SELSERVER, 0x403, 27, 0
+0xecba, 0xf3cf, 0xc6d4, 0xdacc, 0x7720, 0x7777, 0x722e, 0x6465, 0x6168, 
+0x6f64, 0x706f, 0x632e, 0x6d6f, "\000" 
+    0
+END
+
+IDD_ABOUTBOX DLGINIT
+BEGIN
+    IDC_MFCLINK1, 0x37c, 157, 0
+0x4d3c, 0x4346, 0x694c, 0x6b6e, 0x555f, 0x6c72, 0x3c3e, 0x4d2f, 0x4346, 
+0x694c, 0x6b6e, 0x555f, 0x6c72, 0x3c3e, 0x464d, 0x4c43, 0x6e69, 0x5f6b, 
+0x7255, 0x506c, 0x6572, 0x6966, 0x3e78, 0x2f3c, 0x464d, 0x4c43, 0x6e69, 
+0x5f6b, 0x7255, 0x506c, 0x6572, 0x6966, 0x3e78, 0x4d3c, 0x4346, 0x694c, 
+0x6b6e, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x694c, 
+0x6b6e, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4c43, 0x6e69, 
+0x5f6b, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 0x6974, 0x3e70, 
+0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x694c, 0x6b6e, 0x465f, 0x6c75, 
+0x546c, 0x7865, 0x5474, 0x6f6f, 0x746c, 0x7069, "\076" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 CmdGUI(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\CmdGUI.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
