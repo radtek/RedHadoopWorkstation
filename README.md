@@ -1,9 +1,9 @@
-适用读者
+#适用读者
 本手册适用于了解RedHadoop Workstation CRH v1.3功能的用户。
-第一章前言
+#第一章前言
 关于本手册
 本手册主要介绍了本公司RedHadoop Workstation CRH v1.3的基本操作方法。
-系统概述
+#系统概述
 数据伴随人类文明的成长而发展。21世纪随着互联网的发展，处理流、文本、图像、视频等非结构化海量数据系统技术有了迫切的需求。中国大量使用windows系统，Hadoop易用性、推广与windows结合有需求，Redhadoop Workstation应运而生。红象云腾公司致力于将大数据分布式技术带人更多中国企业，开展有大数据相关的基础软件平台、应用、解决方案、大数据培训等业务。基于红象云腾公司强大的底层开发实力，集成了windows系统基础上的hive数据仓库和Hadoop生态系统组件。广大的windows开发者不需要更换操作系统、不需要掌握复杂的Linux和Hadoop配置、开发，在现有操作系统和熟悉的开发环境Eclipse基础上，就能直接使用Hadoop。
 概括来讲，RedHadoop Workstation CRH v1.3是红象云腾公司开发的Hadoop应用的windows版本，实现了单机版hadoop的使用，Demo演示，Eclipse开发和视频检索等功能。此外，软件还包含工具箱，能提供方便、快捷的查询功能。
 Redhadoop Workstation的一大特色是在windows基础上有庞大复杂的各种应用，可以使用免移植：例如大量视频算法基于windows系统开发、应用。
@@ -14,7 +14,7 @@ Redhadoop Workstation的一大特色是在windows基础上有庞大复杂的各�
    -性价比:使用开源Hadoop平台,平台建设成本得到控制；
     Hadoop的视频计算一方面基于大规模分布式技术,海量非结构化数据，可以方便存储和计算。另一方面基于图像识别,OCR,深度学习,语音识别的技术的发展,可以使非结构化数据转化成结构化信息。此外，其范围涉及了从基于图像和声音的存储和播放到基于智能识别技术的统计、分析、挖掘等方面。
 
-第二章系统框架
+#第二章系统框架
 
 图2-1 Redhadoop Workstation开发平台
 其主要功能特点如下：
@@ -55,7 +55,8 @@ com.seasbase.hive.serde.ImageSerDe
 com.seasbase.hive.udf.Detect (检测)
 
 图2-6 交通解决方案
-第三章功能描述
+
+#第三章功能描述
 本软件界面主要包括菜单栏、服务工具箱、开发工具箱及查看工具箱四个模块，具体功能如下：
 一、菜单栏:
 主要功能如下：
@@ -90,7 +91,7 @@ com.seasbase.hive.udf.Detect (检测)
 2）查看HDFS：通过本地端口号查看YARN的信息。
 3）查看YARN：通过本地端口号查看YARN的信息。
 4）查看SPARK：通过本地端口号查看SPARK的信息。
-第四章操作说明
+#第四章操作说明
 一．添加jar包和dll 
 在本机RedhadoopWorkstation的安装目录下的E:\RedHadoop\RedhadoopWorkstation\CRH3\hadoop\bin路径中添加VideoReaderDll.dll。在E:\RedHadoop\RedhadoopWorkstation\CRH3\hadoop\share\hadoop\yarn路径下添加jar包。
 二．启动
@@ -112,7 +113,7 @@ com.seasbase.hive.udf.Detect (检测)
 图4-6 启动Spark Worker
 
 图4-7启动 Spark Shell
-三．操作
+#三．操作
 1）颜色检测模块
 1. 在菜单栏中点击Seasbase-视频检索，或是在开发工具箱中点击颜色检测按钮，进入颜色检索画面；
 
